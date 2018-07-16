@@ -9,3 +9,11 @@
 
 1.  Learn HTML: https://www.w3schools.com/html/default.asp
 2.  Learn CSS: https://www.w3schools.com/css/default.asp
+
+# MAC KEYBOARD SHORTCUTS
+
+1.  CMD + C: Copy
+2.  CMD + V: Paste
+3.  CMD + X: Cut
+4.  CMD + A: Select All
+5.  CMD + Z: Undo

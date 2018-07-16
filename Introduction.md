@@ -149,6 +149,7 @@ After any length of time on the Internet, you’ll notice that a webpage is made
 ### Headline tag
 `<h1>........</h1> to <h6>........</h6>`
 * One way to add emphasis and size to text is to use one of six headline tags.
+
 ![Headline](./assets/Headline.png)
 
 ## 🚨 Let's add to our webpage
@@ -244,16 +245,10 @@ Images can improve the design and the appearance of a web page. In HTML, images 
 * The first tag (opening tag) in a pair is the start tag, the second tag (closing tag) is the end tag.
 * The end tag is written like the start tag, but with a **forward slash inserted before the tag name**.
 
-# CLOSING QUESTIONS 🚨
+# 🚨 CLOSING QUESTIONS 🚨
 
 1.  What are examples of HTML tags?
 2.  What are the **3** components that make up a HTML element?
 3. What is syntax?
-
-# MAC KEYBOARD SHORTCUTS
-
-1.  CMD + C: Copy
-2.  CMD + V: Paste
-3.  CMD + X: Cut
-4.  CMD + A: Select All
-5.  CMD + Z: Undo
+4. What are the 4 primary tags every webpage needs?
+5. What are container tags? An example?
