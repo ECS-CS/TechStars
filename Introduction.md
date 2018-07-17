@@ -232,6 +232,50 @@ Images can improve the design and the appearance of a web page. In HTML, images 
 9. Lets insert `<div>.......</div>` tags and inside them, lets insert image tags. Find an image address on google.
 ![images](./assets/images.png)
 
+# DONE!
+
+Below is the finished code from today's exercise:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World</title>
+</head>
+<body>
+
+<h1>Mr. Bostwick</h1>
+<hr>
+<p>This summer the Computer Science team is hosting three summer programs. Last week was our Discover program where we taught the elementary school Scratch. This week is our Tech Stars program where we are learning about HTML, CSS, and Javascript to create a TicTacToe game. Our last program  will take place on Colgate University where we will host a week long summer camp teaching scholars how to build a ToDo List and a Memory Game with HTML, CSS and Javascript.</p>
+
+<p>
+My Favorite TV Shows: 
+<ul>
+<li>Power</li>
+<li>Silicon Valley</li>
+<li>Whatever a friend recommends on Netflix</li>
+</ul>
+</p>
+
+<p>
+My Favorite Sports: 
+<ol>
+<li>Basketball</li>
+<li>Football</li>
+<li>Flag Football</li>
+</ol>
+</p>
+
+<a href="http://gainorbostwick.com/" title="My Website" target="_blank">My Portfolio<a/>
+
+<div>
+<img src="http://www.modern-notoriety.com/wp-content/uploads/2016/07/air-jordan-1-bred_10.jpg" alt="Jordan 1 Bred" title="Sneakers" width="600px" height="auto" />
+</div>
+
+</body>
+</html>
+```
+
 ## 🚨 INDEPENDENT ACTIVITY 🚨
 
 1. Go here: https://eraseallkittens.com/
