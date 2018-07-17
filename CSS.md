@@ -164,6 +164,24 @@ To link to an external stylesheet, we insert this:
 
 in between our `<head></head>` tags.
 
+For Example:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+  ..................
+  ..................
+  ..................
+  ..................
+  ..................
+</body>
+</html>
+```
+
 ---
 
 ## 🎉 10 MINUTE BREAK
