@@ -10,11 +10,16 @@
 4.  What is a variable?
 5.  What is an array?
 6.  What are parameters?
-7.  What are JS datatypes?
 
 # JAVASCRIPT DEFINED
 1. JavaScript is the programming language of HTML and the Web.
 2. JavaScript and Java are completely different languages, both in concept and design.
+
+# OUR ONLINE JAVASCRIPT EDITOR
+1. https://repl.it/languages/javascript
+2. OR go to https://repl.it/
+    * Choose JavaScript from the dropdown menu
+![repl](./assets/js/repl.png)
 
 # PRINTING TO CONSOLE
 1. As a programmer, printing to console is a very important skill. It is a great tool for debugging our applications and outputting what our programs are doing.
@@ -41,6 +46,7 @@ console.log(z);
 let price1 = 5;
 let price2 = 6;
 let total = price1 + price2;
+console.log(total);
 ```
 2. In programming, just like in algebra, we use variables (like price1) to hold values.
 3. In programming, just like in algebra, we use variables in expressions (total = price1 + price2).
@@ -55,11 +61,12 @@ x = x + 5
 3. In JavaScript, however, it calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.
 
 # DATATYPES
-1. In programming, text values are called text strings.
+1. In programming, text values are called strings.
 2. JavaScript can handle many types of data, but for now, just think of numbers and strings.
 3. Strings are written inside double or single quotes. Numbers are written without quotes.
     * A JavaScript string is zero or more characters written inside quotes.
-4. If you put a number in quotes, it will be treated as a text string.
+4. If you put a number in quotes, it will be treated as a string.
+5. In case you are curious Javascript has 7 datatypes.
 ```javascript
 let pi = 3.14;
 let person = "John Doe";
@@ -91,7 +98,6 @@ let car2 = "Toyota";
 let car3 = "BMW";
 ```
 4. An array can hold many values under a single name, and you can access the values by referring to an index number.
-5. Using an array literal is the easiest way to create a JavaScript Array. 
 
 Syntax:
 ```javascript
@@ -134,8 +140,7 @@ for (statement 1; statement 2; statement 3) {
     * Often statement 3 increments the value of the initial variable.
     * Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else.
 
-Example:
-This example will print to console each car in the array.
+This example will print to console each car in the array:
 ```javascript
 let cars = ["Honda", "Toyota", "BMW"];
 for(let i = 0; i < cars.length; i++){
@@ -153,10 +158,12 @@ function myFunction(p1, p2) {
     return p1 * p2;
     // The function returns the product of p1 and p2
 }
+myFunction(2, 4);
 ```
 ```javascript
 function sayMyName(){
-  console.log('Hi, Mr.B!');
+  console.log('Hi, Mr. B!');
+  // The function will print to console Hi, Mr. B!
 }
 sayMyName();
 ```
@@ -172,10 +179,10 @@ function name(parameter1, parameter2, parameter3) {
 }
 ```
 5. Function **parameters** are listed inside the parentheses () in the function definition.
-6. Function **arguments** are the values received by the function when it is invoked.
 
 # FUNCTION ARGUMENTS
-1. If we had a function defined like this:
+1. Function **arguments** are the values received by the function when it is invoked (called).
+2. If we had a function defined like this:
     * Notice this function is expecting one parameter called **name**.
 ```javascript
 function sayHi(name){
@@ -184,8 +191,7 @@ function sayHi(name){
 ```
 
 2. We will execute this function like this:
-    * Notice, we are passing the function defined above 1 argument with the value of 'Mr. Bostwick'.
-Example:
+    * Notice, we are passing the function defined above 1 argument with the value of 'Mr. Bostwick':
 ```javascript
 sayHi('Mr. Bostwick');
 
@@ -195,7 +201,7 @@ sayHi(myName);
 ```
 
 # INVOKING A FUNCTION
-1. We use the function name and a set of parentheses **()**.
+1. We use the function name and a set of parentheses **()** to invoke a function.
 2. Also known as "Calling a function" or "Running a function".
 
 Example:
