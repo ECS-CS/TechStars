@@ -157,7 +157,7 @@ let status = document.getElementById('status');
 
 Full disclosure: I know there are pieces of code you don't understand. Truthfully, explaining everything at this point may make you more confused. 
 
-🤦🏾‍🤬😶🤓
+🤦🏾‍🤬😶🤓😢😎🙈💀
 
 # STEP 1
 
@@ -208,7 +208,7 @@ boxesArr.forEach(e => e.addEventListener('click', markASpot));
 
 # 🚨 CHALLENGE 🚨
 1. At this point, you realize our game is only working for one player!
-2. Notice the 2nd part of our `if statement` was accidentally deleted. How will we fix this to make player **O** go?
+2. Notice the 2nd part of our `if statement` was accidentally deleted. 😢 How will we fix this to make player **O** go?
 3. Full disclosure: I know there are pieces of code you don't understand. Truthfully, explaining everything at this point may make you more confused. Take hints from what we did for Player X to complete Player O.
 
 ```javascript
@@ -217,6 +217,7 @@ function markASpot(e) {
   // PLAYER X
   if (player) {
     e.target.innerHTML = 'X'; // CHANGE THE DOM ELEMENT TO X
+    status.innerHTML = 'Player O\'s turn!';
     boxesArr.splice(event.target.id, 1, 'X'); // REPLACE THE DOM ELEMENT IN THE ARRAY WITH THE CURRENT MARK (X)
     e.target.classList.add('player1'); // ADD A CLASS TO THE DIV FOR STYLING
     // checkForPrevious(e.target, 'X'); // PREVENTS DOUBLE CLICKING ON A DIV/CHANGING THE MARK
