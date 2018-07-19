@@ -1,4 +1,4 @@
-# Capstone Project
+# CAPSTONE PROJECT
 
 DEMO: https://codepen.io/GainorB/full/XBXVge/
 
@@ -61,7 +61,7 @@ Lets spend the next 10 minutes making our HTML document more unique! Use your im
 
 Here's my code below. Spend some time making my code, yours! **Remember**, CSS gives us the power to transform plain HTML elements and make them look unique. I know there are CSS attributes below we haven't learned, but it doesn't hurt to change a value to see what happens! Explore for the next 20 minutes.
 
-Great Resource: http://www.speedcoder.net/lessons/css/1/
+Great Resource: https://www.w3schools.com/css/default.asp
 
 Hints for making this CSS yours!:
   * Change Font colors
@@ -72,7 +72,7 @@ Hints for making this CSS yours!:
   * Change Border Sizes
   * Change Hover Effects (notice what happens when our mouse hovers over a box)
   * Change Border Styles
-  * Change the size of the box (HINT: right now each box is 200px x 200px)
+  * Change the size of the box (HINT: right now each box is 200px by 200px)
   * Change the animation Colors (HINT: checkout @keyframes)
     * Add more colors?
     * Add different colors?
@@ -153,11 +153,15 @@ const boxes = document.querySelectorAll('.box');
 let status = document.getElementById('status');
 ```
 
-# Capstone Project Development
+# CAPSTONE PROJECT DEVELOPMENT
+
+Full disclosure: I know there are pieces of code you don't understand. Truthfully, explaining everything at this point may make you more confused. 
+
+🤦🏾‍🤬😶🤓
 
 # STEP 1
 
-1. This example below, will select all the HTML elements with a class of `.box` and store it in a variable named `boxes`.
+1. This example below, will select all the HTML elements with a class of `.box` and store them in a variable named `boxes`.
 2. We select the `status` element by its id and store it in a variable named `status`.
 
 ```javascript
@@ -199,8 +203,13 @@ boxesArr.forEach(e => e.addEventListener('click', markASpot));
 
 1. This function will be `invoked` every time we click on a box in our game.
 2. In this function we are toggling our players.
-3. We see that player X goes first, because in our **if** statement our condition evaluates to `true`.
+3. We see that player X goes first, because in our `if statement` our condition evaluates to `true`.
 4. Inside the curly brackets we define everything that belongs to each player.
+
+# 🚨 CHALLENGE 🚨
+1. At this point, you realize our game is only working for one player!
+2. Notice the 2nd part of our `if statement` was accidentally deleted. How will we fix this to make player **O** go?
+3. Full disclosure: I know there are pieces of code you don't understand. Truthfully, explaining everything at this point may make you more confused. Take hints from what we did for Player X to complete Player O.
 
 ```javascript
 // THIS FUNCTION IS RESPONSIBLE FOR MARKING SPOTS ON THE GRID (PLACING X OR O)
@@ -223,7 +232,7 @@ function markASpot(e) {
 # STEP 6
 
 1. This function is called a helper function, its purpose is to prevent double clicking on a square by removing the EventListener if a player's mark is already there.
-2. Notice we are using an `if statement`. Whatever condition we store inside the `parentheses ()` must evaluate to either true or false. If true, we continue and do whats immediately next inside the `{}` brackets.
+2. Notice we are using an `if statement`. Whatever condition we store inside the `()` must evaluate to either true or false. If true, we continue and do whats immediately next inside the `{}` brackets. If false, we do nothing!
 
 ```javascript
 // THIS FUNCTION IS RESPONSIBLE FOR CHECKING IF THE CURRENT POSITION IS ALREADY USED
