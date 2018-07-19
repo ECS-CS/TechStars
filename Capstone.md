@@ -156,9 +156,8 @@ Tips on having an effective break:
 ## THE DOM
 
 1.  Document Object Model (DOM)
-2.  A programming interface for HTML documents. It represents the page so that programs can change the document structure, style, and content.
-3.  The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
-4.  Every element in a document—the document as a whole, the head, tables within the document, table headers, text within the table cells—is part of the document object model for that document, so they can all be accessed and manipulated using the DOM and a scripting language like JavaScript.
+2.  The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+3.  Every element in a document—the document as a whole, the head, tables within the document, table headers, text within the table cells—is part of the document object model for that document, so they can all be accessed and manipulated using the DOM and a scripting language like JavaScript.
 
 ```javascript
 // SELECT ELEMENTS FROM THE DOM
@@ -172,7 +171,7 @@ FULL DISCLOSURE: There are pieces of code you won't understand. Truthfully, expl
 
 🤦🏾‍🤬😶🤓😢😎🙈💀
 
-# STEP 1 (10 MINUTES)
+# STEP 1 (5 MINUTES)
 
 1.  This example below, will select all the HTML elements with a class of `.box` and store them in a variable named `boxes`.
 2.  We select the `status` element by its id and store it in a variable named `status`.
@@ -183,7 +182,7 @@ const boxes = document.querySelectorAll(".box");
 let status = document.getElementById("status");
 ```
 
-# STEP 2 (10 MINUTES)
+# STEP 2 (5 MINUTES)
 
 1.  What we're doing here is pretty interesting. Remember yesterday, we learned `[]`'s are for creating arrays. **ADVANCED TOPIC:** Above when we selected the boxes using the class `.box`, when we use **querySelectorAll**, it returns a NodeList. A NodeList is a collection of document nodes, and is an 'array-like' list. Therefore, we need to convert it to an array using the spread operator.
 
@@ -192,7 +191,7 @@ let status = document.getElementById("status");
 const boxesArr = [...boxes];
 ```
 
-# STEP 3 (10 MINUTES)
+# STEP 3 (5 MINUTES)
 
 1.  We are declaring a variable named `player` and setting it equal to `true`. This is an example of a datatype we haven't learned in class. This datatype is called a `Boolean`, which stores either true or false.
 
@@ -203,7 +202,7 @@ const boxesArr = [...boxes];
 let player = true;
 ```
 
-# STEP 4 (10 MINUTES)
+# STEP 4 (5 MINUTES)
 
 1.  We are looping through the array we defined above. We haven't learned what a method is, but `Arrays` have several 'functions' (methods) attached to them, which give us power to manipulate our arrays. In this example, we are looping through our array and attaching an event listener to **each** item in our array.
 
@@ -212,7 +211,7 @@ let player = true;
 boxesArr.forEach(e => e.addEventListener("click", markASpot));
 ```
 
-# STEP 5 (30 MINUTES)
+# STEP 5 (20 MINUTES)
 
 1.  This function will be `invoked` every time we click on a box in our game.
 2.  In this function we are toggling our players.
@@ -258,7 +257,7 @@ function markASpot(e) {
 }
 ```
 
-# STEP 6 (10 MINUTES)
+# STEP 6 (5 MINUTES)
 
 1.  This function is called a helper function, its purpose is to prevent double clicking on a square by removing the EventListener if a player's mark is already there.
 2.  Notice we are using an `if statement`. Whatever condition we store inside the `()` must evaluate to either true or false. If true, we continue and do whats immediately next inside the `{}` brackets. If false, we do nothing!
@@ -275,3 +274,7 @@ function checkForPrevious(position, player) {
   }
 }
 ```
+
+# STEP 7
+
+# STEP 8
