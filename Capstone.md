@@ -1,5 +1,7 @@
 # Capstone Project
 
+DEMO: https://codepen.io/GainorB/full/XBXVge/
+
 # OBJECTIVE
 1. Create HTML structure for game board
 2. Create CSS for game board
