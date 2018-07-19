@@ -3,33 +3,37 @@
 DEMO: https://codepen.io/GainorB/full/XBXVge/
 
 # OBJECTIVE
-1. Create HTML structure for game board
-2. Create CSS for game board
-3. Start building game logic
-4. Develop a basic understanding regarding the logic in our game
 
-# DO NOW
+1.  Create HTML structure for game board
+2.  Create CSS for game board
+3.  Start building game logic
+4.  Develop a basic understanding regarding the logic in our game
 
-Yesterday we learned how to work with variables, loops and functions. Let's get some practice by doing these challenges!
+# YESTERDAY
 
-# CHALLENGES (20 MINUTES)
+We learned how to work with variables, loops and functions. Let's get some practice by doing these challenges!
+
+# CRITICAL THINKING (20 MINUTES)
+
 Spend the next 20 minutes working on these challenges:
-1. Print 100 numbers to the console. Either 0-99 or 1-100. Whatever method makes sense to you.
-2. https://repl.it/repls/LavenderThinNumericalanalysis
-3. https://repl.it/repls/LavenderThinNumericalanalysis
 
-# AFTER DO NOW
+1.  Print 100 numbers to the console. Either 0-99 or 1-100. Whatever method makes sense to you.
+2.  https://repl.it/repls/LavenderThinNumericalanalysis
+3.  https://repl.it/repls/LavenderThinNumericalanalysis
+
+# AFTER
 
 Log into CodePen. If you remember your login information, GREAT! If not, give us a second to help you!
 
 # HTML (10 MINS)
 
-Our gameboard will consist of this layout!
+Our game board will consist of this layout!
 
 **REVIEW:**
-1. Does anyone remember the difference between giving our HTML elements classes vs. ids?
-2. Does anyone see any HTML elements we've never learned before?
-3. How many unique HTML attributes are there?
+
+1.  Does anyone remember the difference between giving our HTML elements classes vs. ids?
+2.  Does anyone see any HTML elements we've never learned before?
+3.  How many unique HTML attributes are there?
 
 Lets spend the next 10 minutes making our HTML document more unique! Use your imagination! Do whatever you like, whatever you think makes sense. Make your game standout. **Add in any additional HTML elements!**
 
@@ -64,19 +68,20 @@ Here's my code below. Spend some time making my code, yours! **REMEMBER**, CSS g
 **Great Resource:** https://www.w3schools.com/css/default.asp
 
 **Hints for making this CSS yours!:**
-  * Change Font colors
-  * Change Background colors
-  * Maybe add a background image to our gameboard? or our webpage?
-  * Change Font Sizes
-  * Change Border Colors
-  * Change Border Sizes
-  * Change Hover Effects (notice what happens when our mouse hovers over a box)
-  * Change Border Styles
-  * Change the size of the box (**HINT:** right now each box is 200px by 200px)
-  * Change the Animation colors (**HINT:** checkout @keyframes)
-    * Add more colors?
-    * Add different colors?
-    * Add less colors?
+
+- Change Font colors
+- Change Background colors
+- Maybe add a background image to our gameboard? or our webpage?
+- Change Font Sizes
+- Change Border Colors
+- Change Border Sizes
+- Change Hover Effects (notice what happens when our mouse hovers over a box)
+- Change Border Styles
+- Change the size of the box (**HINT:** right now each box is 200px by 200px)
+- Change the Animation colors (**HINT:** checkout @keyframes)
+  - Add more colors?
+  - Add different colors?
+  - Add less colors?
 
 ```css
 .player1 {
@@ -85,8 +90,8 @@ Here's my code below. Spend some time making my code, yours! **REMEMBER**, CSS g
 }
 
 .player2 {
- color: white;
- background-color: red;
+  color: white;
+  background-color: red;
 }
 
 #gameboard {
@@ -119,10 +124,18 @@ Here's my code below. Spend some time making my code, yours! **REMEMBER**, CSS g
 }
 
 @keyframes changeColor {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
 }
 ```
 
@@ -141,14 +154,16 @@ Tips on having an effective break:
 # JS
 
 ## THE DOM
-1. Document Object Model (DOM)
-2. A programming interface for HTML documents. It represents the page so that programs can change the document structure, style, and content.
-3. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
-4. Every element in a document—the document as a whole, the head, tables within the document, table headers, text within the table cells—is part of the document object model for that document, so they can all be accessed and manipulated using the DOM and a scripting language like JavaScript.
+
+1.  Document Object Model (DOM)
+2.  A programming interface for HTML documents. It represents the page so that programs can change the document structure, style, and content.
+3.  The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+4.  Every element in a document—the document as a whole, the head, tables within the document, table headers, text within the table cells—is part of the document object model for that document, so they can all be accessed and manipulated using the DOM and a scripting language like JavaScript.
+
 ```javascript
 // SELECT ELEMENTS FROM THE DOM
-const boxes = document.querySelectorAll('.box');
-let status = document.getElementById('status');
+const boxes = document.querySelectorAll(".box");
+let status = document.getElementById("status");
 ```
 
 # CAPSTONE PROJECT DEVELOPMENT
@@ -159,18 +174,18 @@ FULL DISCLOSURE: There are pieces of code you won't understand. Truthfully, expl
 
 # STEP 1 (10 MINUTES)
 
-1. This example below, will select all the HTML elements with a class of `.box` and store them in a variable named `boxes`.
-2. We select the `status` element by its id and store it in a variable named `status`.
+1.  This example below, will select all the HTML elements with a class of `.box` and store them in a variable named `boxes`.
+2.  We select the `status` element by its id and store it in a variable named `status`.
 
 ```javascript
 // SELECT ELEMENTS FROM THE DOM
-const boxes = document.querySelectorAll('.box');
-let status = document.getElementById('status');
+const boxes = document.querySelectorAll(".box");
+let status = document.getElementById("status");
 ```
 
 # STEP 2 (10 MINUTES)
 
-1. What we're doing here is pretty interesting. Remember yesterday, we learned `[]`'s are for creating arrays. **ADVANCED TOPIC:** Above when we selected the boxes using the class `.box`, when we use **querySelectorAll**, it returns a NodeList. A NodeList is a collection of document nodes, and is an 'array-like' list. Therefore, we need to convert it to an array using the spread operator.
+1.  What we're doing here is pretty interesting. Remember yesterday, we learned `[]`'s are for creating arrays. **ADVANCED TOPIC:** Above when we selected the boxes using the class `.box`, when we use **querySelectorAll**, it returns a NodeList. A NodeList is a collection of document nodes, and is an 'array-like' list. Therefore, we need to convert it to an array using the spread operator.
 
 ```javascript
 // CONVERT NODELIST TO AN ARRAY
@@ -179,7 +194,7 @@ const boxesArr = [...boxes];
 
 # STEP 3 (10 MINUTES)
 
-1. We are declaring a variable named `player` and setting it equal to `true`. This is an example of a datatype we haven't learned in class. This datatype is called a `Boolean`, which stores either true or false.
+1.  We are declaring a variable named `player` and setting it equal to `true`. This is an example of a datatype we haven't learned in class. This datatype is called a `Boolean`, which stores either true or false.
 
 ```javascript
 // USED TO FLIP BETWEEN PLAYERS
@@ -190,48 +205,63 @@ let player = true;
 
 # STEP 4 (10 MINUTES)
 
-1. We are looping through the array we defined above. We haven't learned what a method is, but `Arrays` have several 'functions' (methods) attached to them, which give us power to manipulate our arrays. In this example, we are looping through our array and attaching an event listener to **each** item in our array.
+1.  We are looping through the array we defined above. We haven't learned what a method is, but `Arrays` have several 'functions' (methods) attached to them, which give us power to manipulate our arrays. In this example, we are looping through our array and attaching an event listener to **each** item in our array.
 
 ```javascript
 // LOOP THROUGH DOM ELEMENTS AND ADD CLICK EVENTS TO EACH
-boxesArr.forEach(e => e.addEventListener('click', markASpot));
+boxesArr.forEach(e => e.addEventListener("click", markASpot));
 ```
 
 # STEP 5 (30 MINUTES)
 
-1. This function will be `invoked` every time we click on a box in our game.
-2. In this function we are toggling our players.
-3. We see that player X goes first, because in our `if statement` our condition evaluates to `true`.
-4. Inside the curly brackets we define everything that belongs to each player.
+1.  This function will be `invoked` every time we click on a box in our game.
+2.  In this function we are toggling our players.
+3.  We see that player X goes first, because in our `if statement` our condition evaluates to `true`.
+4.  Inside the curly brackets we define everything that belongs to each player.
 
 # 🚨 CHALLENGE 🚨
-1. At this point, you realize our game is only working for one player!
-2. Notice the 2nd part of our `if statement` was accidentally deleted. 😢 How will we fix this to make player **O** play?
-3. Take hints from what we did for Player X to complete Player O.
+
+1.  At this point, you realize our game is only working for one player!
+2.  Notice the 2nd part of our `if statement` was accidentally deleted. 😢 How will we fix this to make player **O** play?
+3.  Take hints from what we did for Player X to complete Player O.
 
 ```javascript
 // THIS FUNCTION IS RESPONSIBLE FOR MARKING SPOTS ON THE GRID (PLACING X OR O)
 function markASpot(e) {
   // PLAYER X
   if (player) {
-    e.target.innerHTML = 'X'; // CHANGE THE DOM ELEMENT TO X
-    status.innerHTML = 'Player O\'s turn!';
-    boxesArr.splice(event.target.id, 1, 'X'); // REPLACE THE DOM ELEMENT IN THE ARRAY WITH THE CURRENT MARK (X)
-    e.target.classList.add('player1'); // ADD A CLASS TO THE DIV FOR STYLING
-    // checkForPrevious(e.target, 'X'); // PREVENTS DOUBLE CLICKING ON A DIV/CHANGING THE MARK
-    // checkForWinner('X'); // CHECK FOR A WINNER
-    player = false; // SWITCH PLAYER
+    // PLAYER X
+
+    // CHANGE THE BOX TO X
+    e.target.innerHTML = "X";
+
+    // TELL THE USER WHO'S TURN IT IS
+    status.innerHTML = "Player O's turn!";
+
+    // REPLACE THE DOM ELEMENT IN THE ARRAY WITH THE CURRENT MARK (X)
+    boxesArr.splice(event.target.id, 1, "X");
+
+    // ADD A CLASS TO THE DIV FOR STYLING
+    e.target.classList.add("player1");
+
+    // PREVENTS DOUBLE CLICKING ON A DIV/CHANGING THE MARK
+    // checkForPrevious(e.target, 'X');
+
+    // CHECK FOR A WINNER
+    // checkForWinner('X');
+
+    // SWITCH PLAYER
+    player = false;
   } else {
     // PLAYER O
-    // ..............?
   }
 }
 ```
 
-# STEP 6  (10 MINUTES)
+# STEP 6 (10 MINUTES)
 
-1. This function is called a helper function, its purpose is to prevent double clicking on a square by removing the EventListener if a player's mark is already there.
-2. Notice we are using an `if statement`. Whatever condition we store inside the `()` must evaluate to either true or false. If true, we continue and do whats immediately next inside the `{}` brackets. If false, we do nothing!
+1.  This function is called a helper function, its purpose is to prevent double clicking on a square by removing the EventListener if a player's mark is already there.
+2.  Notice we are using an `if statement`. Whatever condition we store inside the `()` must evaluate to either true or false. If true, we continue and do whats immediately next inside the `{}` brackets. If false, we do nothing!
 
 ```javascript
 // THIS FUNCTION IS RESPONSIBLE FOR CHECKING IF THE CURRENT POSITION IS ALREADY USED
@@ -241,7 +271,7 @@ function checkForPrevious(position, player) {
   // IF THE TARGETED DIV'S INNERHTML EQUALS THE CURRENT PLAYER
   if (position.innerHTML === player) {
     // REMOVE EVENT LISTENER IF THE SPOT IS USED
-    position.removeEventListener('click', markASpot);
+    position.removeEventListener("click", markASpot);
   }
 }
 ```
