@@ -12,8 +12,8 @@ DEMO: https://codepen.io/GainorB/full/XBXVge/
 
 Yesterday we learned how to work with variables, loops and functions. Let's get some practice by doing these challenges!
 
-# CHALLENGES
-Spend the next 25 minutes working on these challenges:
+# CHALLENGES (20 MINUTES)
+Spend the next 20 minutes working on these challenges:
 1. Print 100 numbers to the console. Either 0-99 or 1-100. Whatever method makes sense to you.
 2. https://repl.it/repls/LavenderThinNumericalanalysis
 3. https://repl.it/repls/LavenderThinNumericalanalysis
@@ -22,16 +22,16 @@ Spend the next 25 minutes working on these challenges:
 
 Log into CodePen. If you remember your login information, GREAT! If not, give us a second to help you!
 
-# HTML
+# HTML (10 MINS)
 
 Our gameboard will consist of this layout!
 
-**Review:**
+**REVIEW:**
 1. Does anyone remember the difference between giving our HTML elements classes vs. ids?
 2. Does anyone see any HTML elements we've never learned before?
 3. How many unique HTML attributes are there?
 
-Lets spend the next 10 minutes making our HTML document more unique! Use your imagination! Do whatever you like, whatever you think makes sense. Make your game standout.
+Lets spend the next 10 minutes making our HTML document more unique! Use your imagination! Do whatever you like, whatever you think makes sense. Make your game standout. **Add in any additional HTML elements!**
 
 ```html
 <html>
@@ -57,13 +57,13 @@ Lets spend the next 10 minutes making our HTML document more unique! Use your im
 </html>
 ```
 
-# CSS
+# CSS (20 MINUTES)
 
-Here's my code below. Spend some time making my code, yours! **Remember**, CSS gives us the power to transform plain HTML elements and make them look unique. I know there are CSS attributes below we haven't learned, but it doesn't hurt to change a value to see what happens! Explore for the next 20 minutes.
+Here's my code below. Spend some time making my code, yours! **REMEMBER**, CSS gives us the power to transform plain HTML elements and make them look unique. I know there are CSS attributes below we haven't learned, but it doesn't hurt to change a value to see what happens! Explore for the next 20 minutes, make changes!
 
-Great Resource: https://www.w3schools.com/css/default.asp
+**Great Resource:** https://www.w3schools.com/css/default.asp
 
-Hints for making this CSS yours!:
+**Hints for making this CSS yours!:**
   * Change Font colors
   * Change Background colors
   * Maybe add a background image to our gameboard? or our webpage?
@@ -72,8 +72,8 @@ Hints for making this CSS yours!:
   * Change Border Sizes
   * Change Hover Effects (notice what happens when our mouse hovers over a box)
   * Change Border Styles
-  * Change the size of the box (HINT: right now each box is 200px by 200px)
-  * Change the animation Colors (HINT: checkout @keyframes)
+  * Change the size of the box (**HINT:** right now each box is 200px by 200px)
+  * Change the Animation colors (**HINT:** checkout @keyframes)
     * Add more colors?
     * Add different colors?
     * Add less colors?
@@ -144,9 +144,7 @@ Tips on having an effective break:
 1. Document Object Model (DOM)
 2. A programming interface for HTML documents. It represents the page so that programs can change the document structure, style, and content.
 3. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
-4. A Web page is a document.
-5. The DOM is not a programming language, but without it, the JavaScript language wouldn't have any model or notion of web pages.
-6. Every element in a document—the document as a whole, the head, tables within the document, table headers, text within the table cells—is part of the document object model for that document, so they can all be accessed and manipulated using the DOM and a scripting language like JavaScript.
+4. Every element in a document—the document as a whole, the head, tables within the document, table headers, text within the table cells—is part of the document object model for that document, so they can all be accessed and manipulated using the DOM and a scripting language like JavaScript.
 ```javascript
 // SELECT ELEMENTS FROM THE DOM
 const boxes = document.querySelectorAll('.box');
@@ -155,11 +153,11 @@ let status = document.getElementById('status');
 
 # CAPSTONE PROJECT DEVELOPMENT
 
-Full disclosure: I know there are pieces of code you don't understand. Truthfully, explaining everything at this point may make you more confused. 
+FULL DISCLOSURE: There are pieces of code you won't understand. Truthfully, explaining everything at this point may make you more confused. So you will touch the important topics.
 
 🤦🏾‍🤬😶🤓😢😎🙈💀
 
-# STEP 1
+# STEP 1 (10 MINUTES)
 
 1. This example below, will select all the HTML elements with a class of `.box` and store them in a variable named `boxes`.
 2. We select the `status` element by its id and store it in a variable named `status`.
@@ -170,7 +168,7 @@ const boxes = document.querySelectorAll('.box');
 let status = document.getElementById('status');
 ```
 
-# STEP 2
+# STEP 2 (10 MINUTES)
 
 1. What we're doing here is pretty interesting. Remember yesterday, we learned `[]`'s are for creating arrays. **ADVANCED TOPIC:** Above when we selected the boxes using the class `.box`, when we use **querySelectorAll**, it returns a NodeList. A NodeList is a collection of document nodes, and is an 'array-like' list. Therefore, we need to convert it to an array using the spread operator.
 
@@ -179,7 +177,7 @@ let status = document.getElementById('status');
 const boxesArr = [...boxes];
 ```
 
-# STEP 3
+# STEP 3 (10 MINUTES)
 
 1. We are declaring a variable named `player` and setting it equal to `true`. This is an example of a datatype we haven't learned in class. This datatype is called a `Boolean`, which stores either true or false.
 
@@ -190,7 +188,7 @@ const boxesArr = [...boxes];
 let player = true;
 ```
 
-# STEP 4
+# STEP 4 (10 MINUTES)
 
 1. We are looping through the array we defined above. We haven't learned what a method is, but `Arrays` have several 'functions' (methods) attached to them, which give us power to manipulate our arrays. In this example, we are looping through our array and attaching an event listener to **each** item in our array.
 
@@ -199,7 +197,7 @@ let player = true;
 boxesArr.forEach(e => e.addEventListener('click', markASpot));
 ```
 
-# STEP 5
+# STEP 5 (30 MINUTES)
 
 1. This function will be `invoked` every time we click on a box in our game.
 2. In this function we are toggling our players.
@@ -208,8 +206,8 @@ boxesArr.forEach(e => e.addEventListener('click', markASpot));
 
 # 🚨 CHALLENGE 🚨
 1. At this point, you realize our game is only working for one player!
-2. Notice the 2nd part of our `if statement` was accidentally deleted. 😢 How will we fix this to make player **O** go?
-3. Full disclosure: I know there are pieces of code you don't understand. Truthfully, explaining everything at this point may make you more confused. Take hints from what we did for Player X to complete Player O.
+2. Notice the 2nd part of our `if statement` was accidentally deleted. 😢 How will we fix this to make player **O** play?
+3. Take hints from what we did for Player X to complete Player O.
 
 ```javascript
 // THIS FUNCTION IS RESPONSIBLE FOR MARKING SPOTS ON THE GRID (PLACING X OR O)
@@ -230,7 +228,7 @@ function markASpot(e) {
 }
 ```
 
-# STEP 6
+# STEP 6  (10 MINUTES)
 
 1. This function is called a helper function, its purpose is to prevent double clicking on a square by removing the EventListener if a player's mark is already there.
 2. Notice we are using an `if statement`. Whatever condition we store inside the `()` must evaluate to either true or false. If true, we continue and do whats immediately next inside the `{}` brackets. If false, we do nothing!
