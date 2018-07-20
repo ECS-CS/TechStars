@@ -85,6 +85,86 @@ Tips on having an effective break:
 
 ---
 
+# CONDITIONAL STATEMENTS 
+1. Conditional statements are used to perform different actions based on different conditions.
+2. You can use conditional statements in your code to do this.
+3. In JavaScript we have the following conditional statements:
+    * Use `if` to specify a block of code to be executed, if a specified condition is true
+    * Use `else` to specify a block of code to be executed, if the same condition is false
+    * Use `else if` to specify a new condition to test, if the first condition is false
+
+## THE IF STATEMENT
+1. Use the `if` statement to specify a block of JavaScript code to be executed if a condition is true.
+
+**Syntax:**
+```javascript
+if (condition) {
+    // block of code to be executed if the condition is true
+}
+```
+
+**Example:**
+```javascript
+// Can I drive?
+let age = 10;
+
+if (age < 16) {
+    console.log("No, you can't drive!");
+}
+```
+
+## THE ELSE STATEMENT
+1. Use the `else` statement to specify a block of code to be executed if the condition is false.
+
+**Syntax:**
+```javascript
+if (condition) {
+    // block of code to be executed if the condition is true
+} else { 
+    // block of code to be executed if the condition is false
+}
+```
+
+**Example:**
+```javascript
+// Can I drive?
+let age = 10;
+
+if (age < 16) {
+    console.log("No, you can't drive!");
+} else {
+    console.log('Yes, you can drive! Be Safe!');
+}
+```
+
+## THE ELSE IF STATEMENT
+1. Use the `else if` statement to specify a new condition if the first condition is false.
+
+**Syntax:**
+```javascript
+if (condition1) {
+    // block of code to be executed if condition1 is true
+} else if (condition2) {
+    // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+    // block of code to be executed if the condition1 is false and condition2 is false
+}
+```
+
+**Example:**
+```javascript
+// Can I drive?
+let age = 10;
+
+if (age < 16) {
+    console.log("No, you can't drive!");
+} else if (age < 5) { 
+    console.log("Just because you can drive in Roblox, doesn't mean you can really drive!");
+} else {
+    console.log('Yes, you can drive! Be Safe!');
+}
+```
+
 # ARRAYS
 1. JavaScript arrays are used to store multiple values in a single variable.
 ```javascript

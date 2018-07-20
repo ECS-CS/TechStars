@@ -19,7 +19,9 @@ Spend the next 20 minutes working on these challenges:
 
 1.  Print 100 numbers to the console. Either 0-99 or 1-100. Whatever method makes sense to you.
 2.  https://repl.it/repls/LavenderThinNumericalanalysis
-3.  https://repl.it/repls/LavenderThinNumericalanalysis
+3. https://repl.it/repls/ImpracticalWorthlessTerabyte
+4. Create an array of 10 **random** numbers. Loop through this array and print to console **ONLY** the numbers greater than 5.
+5. Create a function named canIWatch that takes in a parameter named age. This function should output "No, you can't watch this movie" if I am younger than 14 or "Yes, you can watch this movie" if I am older than 14.
 
 # AFTER
 
@@ -243,7 +245,7 @@ function markASpot(e) {
     // ADD A CLASS TO THE DIV FOR STYLING
     e.target.classList.add("player1");
 
-    // PREVENTS DOUBLE CLICKING ON A DIV/CHANGING THE MARK
+    // PREVENTS DOUBLE CLICKING
     // checkForPrevious(e.target, 'X');
 
     // CHECK FOR A WINNER
@@ -275,6 +277,75 @@ function checkForPrevious(position, player) {
 }
 ```
 
-# STEP 7
+# STEP 7 (35 minutes)
+
+1. Another helper function that is invoked **every** time a player leaves a mark.
+2. This function checks every possible winning scenario. If a winning scenario is found, the game is over.
+    * How many winning scenarios are there?
+
+# 🚨 CHALLENGE 🚨
+1. Finish the 4 remaining winning scenarios. 
+2. Hints:
+    * Hmm... Notice that we are checking the values stored at specific array indexes. Is there a way to output the values stored in `boxesArr`? Once figured out, do `CMD + OPTION + J` to view your results in the javascript console.
+    * How long is our array? (How many items are in our array)
+    * Observe patterns
+
+```javascript
+// THIS FUNCTION IS RESPONSIBLE CHECKING FOR A WINNER
+function checkForWinner(player) {
+  // CHECK FIRST COLUMN
+  if (boxesArr[0] === boxesArr[1] && boxesArr[1] === boxesArr[2]) {
+    status.innerHTML = `Player ${player} won!`;
+    remove();
+  }
+
+  // CHECK SECOND COLUMN
+  if (boxesArr[3] === boxesArr[4] && boxesArr[4] === boxesArr[5]) {
+    status.innerHTML = `Player ${player} won!`;
+    remove();
+  }
+
+  // CHECK THIRD COLUMN
+  if (boxesArr[6] === boxesArr[7] && boxesArr[7] === boxesArr[8]) {
+    status.innerHTML = `Player ${player} won!`;
+    remove();
+  }
+
+  // CHECK FIRST ROW
+  // ........ ?
+
+
+  // CHECK SECOND ROW
+  // ........ ?
+
+
+  // CHECK THIRD ROW
+  // ........ ?
+
+  // CHECK RIGHT DIAGONAL ROW
+  if (boxesArr[0] === boxesArr[4] && boxesArr[4] === boxesArr[8]) {
+    status.innerHTML = `Player ${player} won!`;
+    remove();
+  }
+
+  // CHECK LEFT DIAGONAL ROW
+  // ........ ?
+
+}
+```
 
 # STEP 8
+
+1. Another helper function that serves one purpose and one purpose only: this function removes the EventListeners from the remaining boxes once the game is over.
+2. Without this function, you'll be able to continue playing the game after someone wins.
+
+```javascript
+// THIS FUNCTION IS RESPONSIBLE FOR REMOVING THE REMANING EVENTLISTENERS
+function remove() {
+  boxesArr
+    .filter(e => e !== 'X' && e !== 'O') 
+    // FILTER OUT THE DIVS WITH MARKED POSITIONS
+    .forEach(e => e.removeEventListener('click', markASpot)); 
+    // REMOVE EVENTLISTENER FROM REMAINING DIVS
+}
+```
