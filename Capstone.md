@@ -34,8 +34,6 @@ Our game board will consist of this layout!
 **REVIEW:**
 
 1.  Does anyone remember the difference between giving our HTML elements classes vs. ids?
-2.  Does anyone see any HTML elements we've never learned before?
-3.  How many unique HTML attributes are there?
 
 Lets spend the next 10 minutes making our HTML document more unique! Use your imagination! Do whatever you like, whatever you think makes sense. Make your game standout. **Add in any additional HTML elements!**
 
@@ -48,15 +46,15 @@ Lets spend the next 10 minutes making our HTML document more unique! Use your im
 <body>
   <h1 id="status">Click a box, let's play!</h1>
   <div id="gameboard">
-      <div class="box" id="0"></div>
-      <div class="box" id="1"></div>
-      <div class="box" id="2"></div>
-      <div class="box" id="3"></div>
-      <div class="box" id="4"></div>
-      <div class="box" id="5"></div>
-      <div class="box" id="6"></div>
-      <div class="box" id="7"></div>
-      <div class="box" id="8"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
   </div>
 </body>
 
@@ -290,6 +288,7 @@ function checkForPrevious(position, player) {
     - Hmm... Notice that we are checking the values stored at specific array indexes. Is there a way to output the values stored in `boxesArr`? Once figured out, do `CMD + OPTION + J` to view your results in the javascript console.
     - How long is our array? (How many items are in our array)
     - Observe patterns
+    - Draw the grid, and label the boxes with the arrays index to help you build each scenario.
 
 ```javascript
 // THIS FUNCTION IS RESPONSIBLE CHECKING FOR A WINNER
